@@ -8,4 +8,10 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
   myname = '';
+  firstName = 'Sachin';
+  lastName = 'Tendulkar';
+  title = 'Angular Property Binding Example';
+
+  //Example 1
+  isDisabled = true;
 }
