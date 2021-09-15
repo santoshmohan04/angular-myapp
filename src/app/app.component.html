@@ -1,18 +1,22 @@
-<hello name="{{ name }}"></hello>
-<p>Enter Your Name to see it on the Screen</p>
-<input type="text" [(ngModel)]="myname" />
-<p>{{ myname }}</p>
-<hr />
-<input type="text" value="Sarah" />
-<button disabled>Test Button</button>
-<h1>Welcome, {{firstName}} {{lastName}}</h1>
-<hr />
-<h1 [innerText]="title"></h1>
-<h2>Example 1</h2>
-<button [disabled]="isDisabled">I am disabled</button>
-<hr />
-<app-server></app-server>
-<hr />
-<app-products></app-products>
-<warning-root></warning-root>
-<success-root></success-root>
+<div class="container">
+  <div class="row">
+    <hello name="{{ name }}"></hello>
+    <p>Enter Your Name to see it on the Screen</p>
+    <input type="text" [(ngModel)]="myname" />
+    <p>{{ myname }}</p>
+    <hr />
+    <input type="text" value="Sarah" />
+    <button class="btn btn-sm btn-primary" disabled>Test Button</button>
+    <h1>Welcome, {{firstName}} {{lastName}}</h1>
+    <hr />
+    <h1 [innerText]="title"></h1>
+    <h2>Example 1</h2>
+    <button class="btn btn-sm btn-danger" [disabled]="isDisabled">I am disabled</button>
+    <hr />
+    <app-server></app-server>
+    <hr />
+    <app-products></app-products>
+    <warning-root></warning-root>
+    <success-root></success-root>
+  </div>
+</div>
