@@ -8,8 +8,8 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
   myname = '';
-  firstName = 'Sachin';
-  lastName = 'Tendulkar';
+  firstName = 'Santosh';
+  lastName = 'Mohan';
   title = 'Angular Property Binding Example';
 
   //Example 1
