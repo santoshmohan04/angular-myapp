@@ -7,13 +7,15 @@
     <hr />
     <input type="text" value="Sarah" />
     <button class="btn btn-sm btn-primary" disabled>Test Button</button>
-    <h1>Welcome, {{firstName}} {{lastName}}</h1>
+    <h1>Welcome, {{ firstName }} {{ lastName }}</h1>
     <hr />
     <h1 [innerText]="title"></h1>
-    <h2>Example 1</h2>
-    <button class="btn btn-sm btn-danger" [disabled]="isDisabled">I am disabled</button>
-    <hr />
     <app-server></app-server>
+    <h2>Example 1</h2>
+    <button class="btn btn-sm btn-danger" [disabled]="isDisabled">
+      I am disabled
+    </button>
+    <hr />
     <hr />
     <app-products></app-products>
     <warning-root></warning-root>
