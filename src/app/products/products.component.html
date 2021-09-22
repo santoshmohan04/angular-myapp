@@ -1,9 +1,11 @@
-<!-- <button class="btn btn-primary" [disabled]="!allowNewProducts">Add New Product</button> -->
-<!-- <p>{{ allowNewProducts }}</p> -->
-<!-- <p [innerText]="allowNewProducts"></p> -->
+<button class="btn btn-primary" [disabled]="!allowNewProducts">
+  Add New Product
+</button>
+<p>{{ allowNewProducts }}</p>
+<p [innerText]="allowNewProducts"></p>
 <app-server></app-server>
-<!-- <label>Username</label> -->
-<!-- <input type="text" class="form-control" [(ngModel)]="username" />
+<label>Username</label>
+<input type="text" class="form-control" [(ngModel)]="username" />
 <button
   class="btn btn-primary"
   [disabled]="username === ''"
@@ -16,13 +18,12 @@
 </p>
 <ng-template #noUser>
   <p>No User created</p>
-</ng-template> -->
+</ng-template>
 
-<button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
+<!-- <button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
 <p *ngIf="showSecret">Secret Password = tuna</p>
 <div
   *ngFor="let logItem of log"
   [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
   [ngClass]="{'white-text': logItem >= 5}"
->{{ logItem }}</div>
-
+>{{ logItem }}</div> -->

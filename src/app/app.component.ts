@@ -14,4 +14,5 @@ export class AppComponent {
 
   //Example 1
   isDisabled = true;
+  color = '';
 }

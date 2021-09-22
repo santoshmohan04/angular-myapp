@@ -8,6 +8,7 @@ import { ServerComponent } from './server/server.component';
 import { ProductsComponent } from './products/products.component';
 import { WarningalertComponent } from './Warningalert/Warningalert.component';
 import { SuccessAlertComponent } from './SuccessAlert/successalert.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -17,8 +18,11 @@ import { SuccessAlertComponent } from './SuccessAlert/successalert.component';
     ServerComponent,
     ProductsComponent,
     WarningalertComponent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    HighlightDirective,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  color = 'yellow';
+}

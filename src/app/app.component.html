@@ -22,3 +22,37 @@
     <success-root></success-root>
   </div>
 </div>
+<h1>My First Attribute Directive</h1>
+
+<h2>Pick a highlight color</h2>
+<div>
+  <input type="radio" name="colors" (click)="color = 'lightgreen'" /> Green
+  <br />
+  <input type="radio" name="colors" (click)="color = 'yellow'" /> Yellow
+  <br />
+  <input type="radio" name="colors" (click)="color = 'cyan'" /> Cyan
+  <br />
+  <input type="radio" name="colors" (click)="color = 'red'" /> Red
+</div>
+<p [appHighlight]="color">Highlight me!</p>
+
+<p [appHighlight]="color" defaultColor="violet">Highlight me too!</p>
+
+<hr />
+<h2>Mouse over the following lines to see fixed highlights</h2>
+
+<p [appHighlight]="'yellow'">Highlighted in yellow</p>
+<p appHighlight="orange">Highlighted in orange</p>
+<p appHighlight="Green">Highlighted in Green</p>
+
+<hr />
+
+<h2>ngNonBindable</h2>
+<p>Use ngNonBindable to stop evaluation.</p>
+<p ngNonBindable>This should not evaluate: {{ 1 + 1 }}</p>
+<p>Value: {{ 1 + 1 }}</p>
+
+<h3>ngNonBindable with a directive</h3>
+<div ngNonBindable [appHighlight]="'yellow'">
+  This should not evaluate: {{ 1 + 1 }}, but will highlight yellow.
+</div>
