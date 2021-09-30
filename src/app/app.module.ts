@@ -9,6 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { WarningalertComponent } from './Warningalert/Warningalert.component';
 import { SuccessAlertComponent } from './SuccessAlert/successalert.component';
 import { HighlightDirective } from './highlight.directive';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -20,6 +21,7 @@ import { HighlightDirective } from './highlight.directive';
     WarningalertComponent,
     SuccessAlertComponent,
     HighlightDirective,
+    ErrorComponent,
   ],
   bootstrap: [AppComponent],
 })
